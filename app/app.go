@@ -231,6 +231,7 @@ func NewInitiaApp(
 
 	// set order of module operations
 	app.ModuleManager.SetOrderBeginBlockers(orderBeginBlockers()...)
+//LINE 235-238 Unhandled Errors in the Setup of BlockSDK
 	app.ModuleManager.SetOrderEndBlockers(orderEndBlockers()...)
 	genesisModuleOrder := orderInitBlockers()
 	app.ModuleManager.SetOrderInitGenesis(genesisModuleOrder...)
